@@ -4,10 +4,10 @@
 
 flowchart LR
     subgraph Frontend
-        A[Frontend (Angular)]
+        A[Frontend - Angular]
     end
 
-    A --> B[API Gateway (Nginx)]
+    A --> B[API Gateway - Nginx]
 
     subgraph Financeiro
         direction TB
@@ -29,8 +29,8 @@ flowchart LR
 
     subgraph Academico
         direction TB
-        I[API Acadêmica (PHP)]
-        J[Consumidor de Filas (PHP)]
+        I[API Acadêmica - PHP Laravel]
+        J[Consumidor de Filas PHP]
         K[PostgreSQL]
         I --> K
         J --> K
